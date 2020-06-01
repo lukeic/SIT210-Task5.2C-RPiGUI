@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'LightToggler.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(888, 614)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(260, 230, 361, 80))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.horizontalLayoutWidget.setFont(font)
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.btnRed = QtWidgets.QRadioButton(self.horizontalLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.btnRed.setFont(font)
+        self.btnRed.setObjectName("btnRed")
+        self.horizontalLayout.addWidget(self.btnRed)
+        self.btnYellow = QtWidgets.QRadioButton(self.horizontalLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.btnYellow.setFont(font)
+        self.btnYellow.setObjectName("btnYellow")
+        self.horizontalLayout.addWidget(self.btnYellow)
+        self.btnBlue = QtWidgets.QRadioButton(self.horizontalLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.btnBlue.setFont(font)
+        self.btnBlue.setObjectName("btnBlue")
+        self.horizontalLayout.addWidget(self.btnBlue)
+        self.horizontalLayout.setStretch(0, 1)
+        self.horizontalLayout.setStretch(1, 1)
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(30, 40, 841, 51))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.layoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setHorizontalSpacing(50)
+        self.gridLayout.setVerticalSpacing(0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.label = QtWidgets.QLabel(self.layoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 1, 1, 1)
+        self.btnExit = QtWidgets.QPushButton(self.layoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.btnExit.sizePolicy().hasHeightForWidth())
+        self.btnExit.setSizePolicy(sizePolicy)
+        self.btnExit.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.btnExit.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("cancel.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btnExit.setIcon(icon)
+        self.btnExit.setObjectName("btnExit")
+        self.gridLayout.addWidget(self.btnExit, 0, 2, 1, 1)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "LightToggler Extreme™"))
+        self.btnRed.setText(_translate("MainWindow", "Red"))
+        self.btnYellow.setText(_translate("MainWindow", "Yellow"))
+        self.btnBlue.setText(_translate("MainWindow", "Blue"))
+        self.label.setText(_translate("MainWindow", "LightToggler Extreme™"))
+
